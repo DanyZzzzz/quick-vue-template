@@ -17,10 +17,10 @@
 # git clone 
 https://github.com/DanyZzzzz/quick-vue-template.git
 
-# pnpm i 
+# yarn add
 
-# npm run dev 
+# yarn dev 
 
-# npm run build 
+# yarn build 
 
 ```

@@ -38,9 +38,9 @@
     "vite-plugin-vue-devtools": "^7.2.1",
     "vite-plugin-webfont-dl": "^3.9.4"
   },
-  "describe": "pnpm 8.15.4 and node 18.18.0",
+  "describe": "node >= 18.18.0",
   "simple-git-hooks": {
-    "pre-commit": "pnpm lint-staged"
+    "pre-commit": "yarn lint-staged"
   },
   "lint-staged": {
     "*": "eslint --fix"
