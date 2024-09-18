@@ -3,6 +3,7 @@ import { defineConfig } from 'vite'
 import Vue from '@vitejs/plugin-vue'
 
 // import generateSitemap from 'vite-ssg-sitemap'
+import Layouts from 'vite-plugin-vue-layouts'
 import Components from 'unplugin-vue-components/vite'
 import AutoImport from 'unplugin-auto-import/vite'
 import VueMacros from 'unplugin-vue-macros/vite'
@@ -34,6 +35,8 @@ export default defineConfig({
       extensions: ['.vue'],
       dts: 'src/typings/typed-router.d.ts',
     }),
+
+    Layouts(),
 
     // https://github.com/antfu/unplugin-auto-import
     AutoImport({

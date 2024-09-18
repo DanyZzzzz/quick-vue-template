@@ -7,16 +7,15 @@
     "module": "ESNext",
     "moduleResolution": "node",
     "paths": {
-      "@/*": ["./src/*"],
-      "~/*": ["./*"]
+      "@/*": ["src/*"]
     },
-    "jsxImportSource": "vue",
     "resolveJsonModule": true,
     "types": [
+      "vitest",
       "vite/client",
-      // "vite-plugin-vue-layouts/client",
+      "vite-plugin-vue-layouts/client",
       "unplugin-vue-macros/macros-global",
-      "unplugin-vue-router/client",
+      "unplugin-vue-router/client"
     ],
     "allowJs": true,
     "strict": true,
@@ -24,7 +23,6 @@
     "noUnusedLocals": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
-    "allowSyntheticDefaultImports":true,
     "isolatedModules": true,
     "skipLibCheck": true
   },
@@ -34,6 +32,5 @@
       "@vue-macros/volar/define-slots"
     ]
   },
-  "include": ["./**/*.ts", "./**/*.tsx", "./**/*.vue"],
-  "exclude": ["dist", "node_modules", ]
+  "exclude": ["dist", "node_modules", "cypress"]
 }
